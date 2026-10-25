@@ -1,0 +1,11 @@
+services:
+  caddy:
+    image: caddy:2-alpine
+    network_mode: host
+    environment:
+      LUMINARY_CADDY_PORT: "12340"
+      LUMINARY_APP_UPSTREAM: "127.0.0.1:5173"
+      LUMINARY_SERVER_UPSTREAM: "127.0.0.1:3000"
+    volumes:
+      - ./deploy/Caddyfile:/etc/caddy/Caddyfile:ro
+    restart: unless-stopped

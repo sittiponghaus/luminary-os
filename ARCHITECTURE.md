@@ -20,6 +20,12 @@
 - K3S
 - Serve Proxy via Cloudflare Tunnel
 
+## Reverse Proxy
+
+- Serve web on `/`
+- Serve api on `/api/v1`
+- Serve websocket on `/api/v1/wss` using Effect RPC
+
 ## Folder Architecture
 
 - app/ # Front End

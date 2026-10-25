@@ -1,0 +1,19 @@
+# Luminary OS local ingress — operator/tunnel owns external TLS later.
+{
+	admin off
+}
+
+:{$LUMINARY_CADDY_PORT:12340} {
+	# Websocket / Effect RPC (reserved) — must precede generic /api/v1*
+	handle /api/v1/wss* {
+		reverse_proxy {$LUMINARY_SERVER_UPSTREAM:127.0.0.1:3000}
+	}
+
+	handle /api/v1* {
+		reverse_proxy {$LUMINARY_SERVER_UPSTREAM:127.0.0.1:3000}
+	}
+
+	handle {
+		reverse_proxy {$LUMINARY_APP_UPSTREAM:127.0.0.1:5173}
+	}
+}

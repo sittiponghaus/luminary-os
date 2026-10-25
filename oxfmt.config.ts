@@ -15,8 +15,8 @@ export default defineConfig({
   sortImports: {
     newlinesBetween: true,
     sortSideEffects: false,
-    internalPattern: ["@bridge/ui", "@bridge/web", "package.json"],
+    internalPattern: ["#app/**", "#server/**", "#shared/**", "#type/**", "package.json"],
     groups: ["builtin", "external", "internal", "parent", "sibling", "index", "style", "unknown"]
   },
-  ignorePatterns: ["internal/catalog/vendor/**", ".*", "dist", "lighthouse-reports", "node_modules", "test-results"]
+  ignorePatterns: [".*", "dist", "node_modules", "coverage", "test-results"]
 })

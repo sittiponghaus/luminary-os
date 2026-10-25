@@ -9,24 +9,7 @@ export default defineConfig({
   env: {
     builtin: true
   },
-  ignorePatterns: [
-    "internal/catalog/vendor/**",
-    "**/.nx/**",
-    "**/.svelte-kit/**",
-    "**/build/**",
-    "**/coverage/**",
-    "**/dist/**",
-    "**/snap/**",
-    "**/vite.config.*.timestamp-*.*",
-    "eslint.config.js",
-    ".prettierrc",
-    ".repos/**",
-    ".agents/**",
-    ".cursor/**",
-    ".claude/**",
-    ".opencode/**",
-    ".pi/**"
-  ],
+  ignorePatterns: ["**/build/**", "**/coverage/**", "**/dist/**", "**/node_modules/**", ".agents/**", ".claude/**"],
   rules: {},
   overrides: [
     {

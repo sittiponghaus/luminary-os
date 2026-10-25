@@ -152,4 +152,8 @@ vite.config.ts.timestamp-*
 
 !.agents
 !.claude
+!.cursor
+!.opencode
 !.gitignore
+!.gitkeep
+!**/.gitkeep
