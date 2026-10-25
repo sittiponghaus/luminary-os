@@ -20,6 +20,46 @@
 - K3S
 - Serve Proxy via Cloudflare Tunnel
 
+## Folder Architecture
+
+- app/ # Front End
+  - adapter/
+    - api.adapter.ts
+    - wss.adapter.ts
+  - controller/
+    - _authenticated/
+      - studio/
+        - index.controller.ts
+    - _public/
+      - index.controller.ts
+  - config/
+    - app.config.ts
+    - some-config.config.ts
+  - repository/
+    - get-user.repository.ts
+  - usecase/
+    - verify-user-session.usecase.ts
+- shared/
+  - config/
+  - schema/
+    - http-response.schema.ts
+- server/
+  - adapter/
+  - config/
+  - controller/
+    - http/
+      - http.controller.ts
+    - workflow/
+      - workflow.controller.ts
+    - message-queue/
+      - message-queue.controller.ts
+  - entity/
+    - user.entity.ts
+  - repository/
+  - usecase/
+- type/
+  - generic.d.ts
+
 ## Rules
 
 ## Coding Style Rules
@@ -29,20 +69,18 @@
 - **ALWAYS** use Effect's Schema for validation.
 - **ALWAYS** use `Schema.Enum` instead of Schema.Literal, make sure to have declarative config and use it like `Schema.Enum(AppConfig)`.
 - **ALWAYS** use PascalCase for exported variable (export const) like `MakeRegistration`, `NativeLayer`, `CreatedAt`. Local variables stay camelCase.
-- **ALWAYS** use Clean Architecture (Onion Architect) with concept `Usecase`, `Repository`, `Adapter`, `Mapper`; No `Port` concept, use `interface` instead. Every handler, controller, service bindings request must hit `usecase` layer first (business logic held here). Repository held the boundary to datastore, external services with no business logic. Adapter layer use to abstract each external interface for reusable in repository layer. `Mapper` use to map the payload with the shared contract (DTO) layer and decode into the usecase desired shape (repository responsibility). E.g., Usecacse -> Repository (with Mapper) -> Adapter; Cli -> Usecase; Http Controller -> Usecase; Workflow Controller -> Usecase.
+- **ALWAYS** use Clean Architecture (Onion Architect) with concept `Usecase`, `Repository`, `Entity`, `Adapter`, `Mapper`; No `Port` concept, use `interface` instead. Every handler, controller, service bindings request must hit `usecase` layer first (business logic held here). Repository held the boundary to datastore, external services with no business logic. Adapter layer use to abstract each external interface for reusable in repository layer. `Mapper` use to map the payload with the shared contract (DTO) layer and decode into the usecase desired shape (repository responsibility). E.g., Usecacse -> Repository (with Mapper) -> Adapter; Cli -> Usecase; Http Controller -> Usecase; Workflow Controller -> Usecase.
 - **ALWAYS** restricted maximum traverse directory paths import is 1 (`../some-file.ts`), more than that must use absolute import.
+
+### Naming Rules
+
+- **ALWAYS** use singular except variable name can used plural if needed.
+- **NEVER** cast type.
 
 ### Time Zone Rules
 
 - **ALWAYS** respect local timezone, use single local timezone query to rules all.
 - **ALWAYS** store UTC timezone in database.
-
-### Naming Rules
-
-- **ALWAYS** use singular except variable name can used plural if needed.
-- **ALWAYS** use
-
-### Code Style Rules
 
 ### Agent Implementation Rules
 
@@ -54,7 +92,6 @@
 - **NEVER** ask to switch for plan mode.
 - **NEVER** run dev server, user owned it. If it not run, just tell user to do.
 - **NEVER** handoff anything back to user without verify it work.
-- **NEVER** cast type.
 
 ### Architecture Design Rules
 
