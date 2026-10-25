@@ -1,0 +1,104 @@
+{
+  "version": 1,
+  "skills": {
+    "archive-plan": {
+      "source": "skills.sites.app.internal.kruengkao.com",
+      "sourceUrl": "https://skills.sites.app.internal.kruengkao.com",
+      "sourceType": "well-known",
+      "computedHash": "dadba952351a5dc8fffdc87d4593a811580f34af6d55bfeb21d583459ad63527",
+      "wellKnownDigest": "sha256:c76611606c8794f392880dbbc4a96a3291a55448ee6ffbbd4f41f22072400e13"
+    },
+    "audit-program": {
+      "source": "foldkit/foldkit",
+      "sourceType": "github",
+      "skillPath": "skills/audit-program/SKILL.md",
+      "computedHash": "2fd4779a3b8bd80ccb0f0c63a3f2ad1471a1b04c95729368e291ce2ee374bd0d"
+    },
+    "caveman": {
+      "source": "juliusbrussee/caveman",
+      "sourceType": "github",
+      "skillPath": "skills/caveman/SKILL.md",
+      "computedHash": "71b600c88c8d1d36f18c4875db23b53c5d6cb9ba3195e19451d6b1bb67db07c4"
+    },
+    "caveman-commit": {
+      "source": "juliusbrussee/caveman",
+      "sourceType": "github",
+      "skillPath": "skills/caveman-commit/SKILL.md",
+      "computedHash": "b416cf134b0f33ddadeca7977aebdbb2d3db79a166d0fce2e1aabeec98132766"
+    },
+    "caveman-compress": {
+      "source": "juliusbrussee/caveman",
+      "sourceType": "github",
+      "skillPath": "skills/caveman-compress/SKILL.md",
+      "computedHash": "9c8d35882a93e387a584cc4efaacb74433d379a2bd02e3e6f6ad4f7c30ff55ed"
+    },
+    "commit-changes": {
+      "source": "foldkit/foldkit",
+      "sourceType": "github",
+      "skillPath": ".agents/skills/commit-changes/SKILL.md",
+      "computedHash": "6f03d45b9cad7a3684c6daf7e260530b12281118bfd0ce120907683e09164dc3"
+    },
+    "create-plan": {
+      "source": "skills.sites.app.internal.kruengkao.com",
+      "sourceUrl": "https://skills.sites.app.internal.kruengkao.com",
+      "sourceType": "well-known",
+      "computedHash": "5d8351e67c7781e6a2ca9bba7c788ace1d47099bfa4679bb67d998d833b3b371",
+      "wellKnownDigest": "sha256:82c95fb77827660bf9652109f33577f547ee35d8e2e07f5a8709562956028b05"
+    },
+    "effect": {
+      "source": "kitlangton/skills",
+      "sourceType": "github",
+      "skillPath": "skills/effect/SKILL.md",
+      "computedHash": "d88417dca5f22fcc80b03ebd4096dfa6113a50cc6bb574bf53f75248cd321e35"
+    },
+    "effect-ts": {
+      "source": "effect-ts/skills",
+      "sourceType": "github",
+      "skillPath": "skills/effect-ts/SKILL.md",
+      "computedHash": "cb225ba5dda169883dfee680fba6c570c89245ba19242a9bc5c3f2ac8218a55f"
+    },
+    "foldkit": {
+      "source": "foldkit/foldkit",
+      "sourceType": "github",
+      "skillPath": "skills/foldkit/SKILL.md",
+      "computedHash": "c3de20f4aa79c073896eb54b2e1235d8844f30bbb428cbc3043006fc2af9fd9b"
+    },
+    "generate-program": {
+      "source": "foldkit/foldkit",
+      "sourceType": "github",
+      "skillPath": "skills/generate-program/SKILL.md",
+      "computedHash": "1c66d1b5ef5caac5fb431e74d1500324620a8c0d140c16e218a6b30bc1a9e931"
+    },
+    "project-rules": {
+      "source": "skills.sites.app.internal.kruengkao.com",
+      "sourceUrl": "https://skills.sites.app.internal.kruengkao.com",
+      "sourceType": "well-known",
+      "computedHash": "7c43df9657463799356ff1b04d0762b92a41706d18883848d089588624823d00",
+      "wellKnownDigest": "sha256:5aeed5ccef935627382d5315511e81e2d1ed9fb5781f4c641a1ea1a4bfd1e55f"
+    },
+    "release-version": {
+      "source": "foldkit/foldkit",
+      "sourceType": "github",
+      "skillPath": ".agents/skills/release-version/SKILL.md",
+      "computedHash": "f4efdad32a14ab8c42cbaacd247efca3848eaf586bede5df13b19ed0dbca9bbe"
+    },
+    "review-contributor-pr": {
+      "source": "foldkit/foldkit",
+      "sourceType": "github",
+      "skillPath": ".agents/skills/review-contributor-pr/SKILL.md",
+      "computedHash": "d646f00251509c1967db3d28ba0580118e6b1953df02842808d8cc7be8b15cb7"
+    },
+    "tdd": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/tdd/SKILL.md",
+      "computedHash": "daf55026f456af104a72fa43247f7bcec89e5127316dc5b1b8d675d6a9d8ce94"
+    },
+    "write-release-blog-post": {
+      "source": "foldkit/foldkit",
+      "sourceType": "github",
+      "skillPath": ".agents/skills/write-release-blog-post/SKILL.md",
+      "computedHash": "ff25d1bb27a622e65114e648f8bdceb73b367b097cfa706c4fbb929b15db10e0"
+    }
+  }
+}
